@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+    <!--TextureView for Camera Preview-->
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <!--ImageView for Compass-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:padding="30dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/compass1"
+        android:contentDescription="@string/compass" />
+
+    <!--ImageView for Camera Button-->
+    <ImageView
+        android:id="@+id/btnCapture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/shutter"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="@string/capture"
+        android:contentDescription="@string/camera_button" />
+
+</RelativeLayout>
